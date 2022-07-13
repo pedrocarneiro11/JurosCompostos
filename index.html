@@ -8,24 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Título">
+    <div class="jurosCompostos">
         <h1>Calculadora juros compostos</h1>
+        
         <div class="valorInicial"><input type="number">Digite o valor inicial: </div>
         <div class="taxaJuros"><input type="number">Digite a taxa de juros: </div>
-        <h3>A taxa de juros será mensal ou anual?</h3>
-        <input type="radio">Mensal
-        <input type="radio">Anual
-        <div class="duracao"><input type="number">Digite a duracao: </div>
-        <h3>Meses ou anos?</h3>
-        <input type="radio">Meses
-        <input type="radio">Anos
-         
-    </div>
-    <script src="script.js"></script> 
-    <div class="Fundo">
-        <div class="Parametros">
 
+        <h3>A taxa de juros será mensal ou anual?</h3>
+
+        <div class="mensalAnual">
+            <input type="radio">Mensal
+            <input type="radio">Anual
         </div>
+
+        <div class="duracao"><input type="number">Digite a duracao: </div>
+
+        <h3 class="mesesOuAnos">Meses ou anos?</h3>
+
+        <div class="mesAnos">
+            <input type="radio">Meses
+            <input type="radio">Anos
+        </div>         
     </div>
+    
+    <script src="script.js"></script> 
 </body>
 </html>
