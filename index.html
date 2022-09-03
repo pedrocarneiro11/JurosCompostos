@@ -8,29 +8,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="jurosCompostos">
-        <h1>Calculadora juros compostos</h1>
-        
-        <div class="valorInicial"><input type="number">Digite o valor inicial: </div>
-        <div class="taxaJuros"><input type="number">Digite a taxa de juros: </div>
+    <form action="action_page.php" method="get" class="formulario">
+        <div class="jurosCompostos">
+            <h1>Calculadora juros compostos</h1>
+            
+            <div>
+                <input type="number" placeholder="Digite o valor inicial" id="valorInicial">
+            </div>
 
-        <h3>A taxa de juros será mensal ou anual?</h3>
-
-        <div class="mensalAnual">
-            <input type="radio">Mensal
-            <input type="radio">Anual
-        </div>
-
-        <div class="duracao"><input type="number">Digite a duracao: </div>
-
-        <h3 class="mesesOuAnos">Meses ou anos?</h3>
-
-        <div class="mesAnos">
-            <input type="radio">Meses
-            <input type="radio">Anos
-        </div>         
-    </div>
+            <div>
+                <input type="number" placeholder="Digite a taxa de juros" id="taxaJuros">
+            </div>
     
+            <h3>A taxa de juros será mensal ou anual?</h3>
+    
+            <div id="mensalAnual">
+                <input type="radio" id="mensal" name="mensalAnual" value="Mensal">
+                <label for="mensal">Mensal</label><br>
+                <input type="radio" id="anual" name="mensalAnual" value="Anual">
+                <label for="css">Anual</label><br>
+            </div>
+    
+            <div>
+                <input type="number" placeholder="Digite a duracao" id="duracao">
+            </div>
+    
+            <h3 id="mesesOuAnos">Meses ou anos?</h3>
+    
+            <div id="mesAnos">
+                <input type="radio" id="mensal" name="mesAnos" value="Meses">
+                <label for="mes">Meses</label><br>
+                <input type="radio" id="css" name="mesAnos" value="Anos">
+                <label for="anos">Anos</label><br>
+            </div>         
+        </div>
+        <button type="button" onclick="JurosCompostos()">Calcular</button>
+    </form>
     <script src="script.js"></script> 
 </body>
 </html>
