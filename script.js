@@ -35,17 +35,4 @@ MontanteFinal = MontanteInicial*[(1+TaxaJuros)^Duracao]
 Entrega MontanteFinal
  */
 
-// document.getElementById
 
-/*
-    var v;
-
-document.getElementById('dest_one_key').addEventListener('change', function(event) {
-    v = event.target.value;
-    console.log('Value: ' + v);
-});
-    */
-
-/*
-    var TaxaJuros = document.getElementById("taxaJuros").innerHTML;
-    var Duracao = document.getElementById("Duracao").innerHTML; */
