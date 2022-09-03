@@ -23,10 +23,10 @@
             <h3>A taxa de juros será mensal ou anual?</h3>
     
             <div id="mensalAnual">
-                <input type="radio" id="mensal" name="mensalAnual" value="Mensal">
-                <label for="mensal">Mensal</label><br>
-                <input type="radio" id="anual" name="mensalAnual" value="Anual">
-                <label for="css">Anual</label><br>
+                <select name="mensalAnual" id="SelectMensalAnual">
+                    <option value="Mensal">Mensal</option>
+                    <option value="Anual">Anual</option>
+                </select>
             </div>
     
             <div>
@@ -36,10 +36,10 @@
             <h3 id="mesesOuAnos">Meses ou anos?</h3>
     
             <div id="mesAnos">
-                <input type="radio" id="mensal" name="mesAnos" value="Meses">
-                <label for="mes">Meses</label><br>
-                <input type="radio" id="css" name="mesAnos" value="Anos">
-                <label for="anos">Anos</label><br>
+                <select name="mesAnos" id="SelectMesAnos">
+                    <option value="Meses">Meses</option>
+                    <option value="Anos">Anos</option>
+                </select>
             </div>         
         </div>
         <button type="button" onclick="JurosCompostos()">Calcular</button>
