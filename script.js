@@ -4,18 +4,18 @@ function JurosCompostos() {
 
     var ValorInicial, TaxaJuros, Duracao, MensalAnual, MesAnos;
 
-    ValorInicial = document.getElementById(valorInicial.innerhtml);
-    TaxaJuros = document.getElementById(taxaJuros.innerhtml);
-    Duracao = document.getElementById(duracao.innerhtml);
-    MensalAnual = document.getElementById(MensalAnual.innerhtml);
-    MesAnos = document.getElementById(MesAnos.innerhtml);
+    ValorInicial = document.getElementById('valorInicial').value;
+    TaxaJuros = document.getElementById('taxaJuros').value;
+    Duracao = document.getElementById('duracao').value;
+    MensalAnual = document.getElementById('SelectMensalAnual').value;
+    MesAnos = document.getElementById('SelectMesAnos').value;
 
 
     console.log(ValorInicial);
     console.log(TaxaJuros);
     console.log(Duracao);
-    console.log(Mensal);
-    console.log(Anual);
+    console.log(MensalAnual);
+    console.log(MesAnos);
 
  
 }
