@@ -56,45 +56,6 @@ function JurosCompostos() {
     Juros = ValorInicial * parte3;
     ValorFinal = parseInt(ValorInicial) + parseInt(Juros);
     console.log('Valor final: ' + ValorFinal);
-
-
-/*
-    if(MesAnos == "Meses") {
-        Duracao = Duracao;
-        console.log(Duracao + ' meses');
-    } else {
-        Duracao = Duracao * 12;
-        console.log(Duracao + ' meses');
-    } 
-
-    console.log("Valor inicial: " + ValorInicial);
-    console.log("Taxa de juros: " + TaxaJuros + "%");
-    console.log("Mensal ou anual: " + MensalAnual);
-    console.log("Meses ou anos: " + MesAnos);
-
-    parte1 = 1 + TaxaCalc; 
-    console.log("parte 1: " + parte1);
-
-    //erro na parte 2
-
-    parte2 = parte1 ** Duracao; 
-    console.log("parte 2: " + parte2);
-
-    console.log(parte1);
-    console.log(parte2);
-
-    /*
-
-    ValorFinal = (ValorInicial*parte2);
-
-    console.log("Valor final: " + ValorFinal);
-
-    document.getElementById("resultado").innerHTML = "Resultado: " + ValorFinal; */
-
-    // taxa de juros para calculo será a TaxaCalc
-
-    
- 
 }
 
 
