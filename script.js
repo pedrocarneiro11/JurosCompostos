@@ -2,7 +2,7 @@ function JurosCompostos() {
 
     var ValorInicial, TaxaJuros, TaxaCalc, Duracao, MensalAnual, MesAnos;
 
-    var ValorFinal;
+    var Juros, ValorFinal;
 
     var parte1; var parte2; var parte3;
 
@@ -11,16 +11,61 @@ function JurosCompostos() {
     Duracao = document.getElementById('duracao').value;
     MensalAnual = document.getElementById('SelectMensalAnual').value;
     MesAnos = document.getElementById('SelectMesAnos').value;
-
     TaxaCalc = TaxaJuros/100;
 
+    if (MesAnos == "Meses" && MensalAnual == "Mensal") {
+        Duracao = Duracao;
+        console.log(Duracao + ' meses');
+        parte1 = 1 + TaxaCalc;
+        console.log('parte 1: ' + parte1);
+        parte2 = parte1**Duracao;
+        console.log('parte 2: ' + parte2);
+    } 
+    
+    else if (MesAnos == "Meses" && MensalAnual == "Anual") {
+        Duracao = Duracao / 12; // Converter duracao para anos
+        console.log(Duracao + ' anos');
+        parte1 = 1 + TaxaCalc;
+        console.log('parte 1: ' + parte1);
+        parte2 = parte1**Duracao;
+        console.log('parte 2: ' + parte2);
+        // a partir daqui, mesAnos sera anos e MensalAnual será anual
+
+        
+    } else if (MesAnos == "Anos" && MensalAnual == "Mensal") {
+        Duracao = Duracao*12; // Converter duracao para meses
+        console.log(Duracao + ' meses');
+        parte1 = 1 + TaxaCalc;
+        console.log('parte 1: ' + parte1);
+        parte2 = parte1**Duracao;
+        console.log('parte 2: ' + parte2);
+        // a partir daqui, mesAnos sera anos e MensalAnual será anual
+        
+    } else if (MesAnos == "Anos" && MensalAnual == "Anual") {
+        Duracao = Duracao;
+        console.log(Duracao + ' anos');
+        parte1 = 1 + TaxaCalc;
+        console.log('parte 1: ' + parte1); 
+        parte2 = parte1**Duracao;
+        console.log('parte 2: ' + parte2);       
+    }
+
+    parte3 = parte2 - 1;
+    console.log('parte 3: ' + parte3);
+
+    Juros = ValorInicial * parte3;
+    ValorFinal = parseInt(ValorInicial) + parseInt(Juros);
+    console.log('Valor final: ' + ValorFinal);
+
+
+/*
     if(MesAnos == "Meses") {
         Duracao = Duracao;
         console.log(Duracao + ' meses');
     } else {
         Duracao = Duracao * 12;
         console.log(Duracao + ' meses');
-    }
+    } 
 
     console.log("Valor inicial: " + ValorInicial);
     console.log("Taxa de juros: " + TaxaJuros + "%");
@@ -30,11 +75,21 @@ function JurosCompostos() {
     parte1 = 1 + TaxaCalc; 
     console.log("parte 1: " + parte1);
 
-    parte2 = Math.pow(parte1, Duracao); 
+    //erro na parte 2
+
+    parte2 = parte1 ** Duracao; 
     console.log("parte 2: " + parte2);
 
+    console.log(parte1);
+    console.log(parte2);
+
+    /*
+
     ValorFinal = (ValorInicial*parte2);
+
     console.log("Valor final: " + ValorFinal);
+
+    document.getElementById("resultado").innerHTML = "Resultado: " + ValorFinal; */
 
     // taxa de juros para calculo será a TaxaCalc
 
