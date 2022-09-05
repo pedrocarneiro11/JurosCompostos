@@ -59,7 +59,7 @@ function JurosCompostos() {
 
     document.getElementById('resultado').innerHTML = "Resultado: " + ValorFinal;
 }
-
+// a
 
 /*
 Declara MontanteInicial OK
