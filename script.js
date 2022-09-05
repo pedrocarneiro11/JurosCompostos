@@ -56,6 +56,8 @@ function JurosCompostos() {
     Juros = ValorInicial * parte3;
     ValorFinal = parseInt(ValorInicial) + parseInt(Juros);
     console.log('Valor final: ' + ValorFinal);
+
+    document.getElementById('resultado').innerHTML = "Resultado: " + ValorFinal;
 }
 
 
