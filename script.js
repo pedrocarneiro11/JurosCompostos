@@ -5,7 +5,7 @@ function JurosCompostos() {
     let duracao = document.getElementById("duracao").value;
     let mesAnos = document.getElementById("SelectMesAnos").value; //Meses ou Anos  
     let mensalAnual = document.getElementById("SelectMensalAnual").value; //Mensal ou Anual  
-    let valor_final
+    let valor_final;
 
     if (mesAnos=="Meses") {
         console.log("1")
