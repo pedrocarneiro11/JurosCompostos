@@ -7,27 +7,17 @@ function JurosCompostos() {
     let mensalAnual = document.getElementById("SelectMensalAnual").value; //Mensal ou Anual  
     let valor_final;
 
-    if (mesAnos=="Meses") {
-        console.log("1")
-    } else if (mesAnos=="Anos" && mensalAnual == "Mensal") {
-        duracao = duracao * 12
+    if (mesAnos=="Anos" && mensalAnual == "Mensal") {
+        duracao = duracao * 12;
     }
 
-    if (mensalAnual=="Mensal") {
-        console.log("2")
-    } else if (mensalAnual=="Anual") {
+    if (mensalAnual=="Anual") {
         if (mesAnos == "Meses") {
-            duracao = duracao / 12
+            duracao = duracao / 12;
         }
     }
 
-    valor_final = valor_inicial * Math.pow(1 + taxa_percentual, duracao);
-
-    console.log(valor_inicial);
-    console.log(taxa);
-    console.log(duracao);
-    console.log(valor_final); 
-    console.log(mesAnos); 
+    valor_final = valor_inicial * Math.pow(1 + taxa_percentual, duracao); 
 
     document.getElementById("resultado").innerHTML= valor_final.toFixed(2);
   }
