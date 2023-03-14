@@ -12,42 +12,46 @@
         <div class="jurosCompostos">
             <h1>Calculadora juros compostos</h1>
             
-            <div>
+            <div class="form">
                 <h3>Digite o valor inicial:</h3>
                 <input type="number" placeholder="Digite o valor inicial" id="valorInicial">
             </div>
 
-            <div>
+            <div class="form">
                 <h3>Digite a taxa de juros:</h3>
                 <input type="number" placeholder="Digite a taxa de juros" id="taxaJuros">
             </div>
     
-            <h3>A taxa de juros será mensal ou anual?</h3>
-    
-            <div id="mensalAnual">
+            <div id="mensalAnual" class="form">
+                <h3>A taxa de juros será mensal ou anual?</h3>
                 <select name="mensalAnual" id="SelectMensalAnual">
                     <option value="Mensal">Mensal</option>
                     <option value="Anual">Anual</option>
                 </select>
-            </div>
-
-            <h3>Digite a duração dos juros:</h3>
+            </div>            
     
-            <div>
+            <div class="form">
+                <h3>Digite a duração dos juros:</h3>
                 <input type="number" placeholder="Digite a duracao" id="duracao">
             </div>
     
-            <h3 id="mesesOuAnos">Meses ou anos?</h3>
+            
     
-            <div id="mesAnos">
+            <div id="mesAnos" class="form">
+                <h3 id="mesesOuAnos">Meses ou anos?</h3>
                 <select name="mesAnos" id="SelectMesAnos">
                     <option value="Meses">Meses</option>
                     <option value="Anos">Anos</option>
                 </select>
-            </div>         
+            </div>  
+            
+            <div class="resultado">
+                <button class="button" type="button" onclick="JurosCompostos()">Calcular</button>
+                <h1 id="resultado"></h1>
+            </div>
         </div>
-        <button type="button" onclick="JurosCompostos()">Calcular</button>
-        <h1 id="resultado"></h1>
+        
+        
     </form>
     <script src="script.js"></script> 
 </body>

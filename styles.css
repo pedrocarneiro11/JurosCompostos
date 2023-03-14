@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.jurosCompostos {
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.form input{
+    height: 18px;
+    text-align: center;
+}
+
+.form input::placeholder{
+    text-align: center;
+}
+
+.form select{
+    text-align: center;
+    height: 18px;
+}
+
+.resultado {
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.resultado > button:hover {
+    cursor: pointer;
+}
